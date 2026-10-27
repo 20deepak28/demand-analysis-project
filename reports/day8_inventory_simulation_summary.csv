@@ -1,0 +1,2 @@
+simulation_start,simulation_end,item_store_combinations,total_demand,fulfilled_demand,unmet_demand,fill_rate_pct,stockout_day_pct_avg,average_inventory_avg,total_units_ordered,total_orders
+2015-04-08,2016-04-24,1000,444626,375062,69564,84.35449119034874,6.665535248041775,10.68251174934726,372058,62778
