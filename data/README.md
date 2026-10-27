@@ -4,49 +4,51 @@
 
 ## 📌 Project Overview
 
-This project explores historical product-level demand data to identify patterns, understand demand behavior, and develop machine learning models that can support better inventory planning.
+This project focuses on analyzing historical product-level demand data to identify patterns, understand demand behavior, and develop machine learning models that support better inventory planning.
 
-The workflow covers the complete data science process, from exploratory data analysis and preprocessing to feature engineering, baseline modeling, model improvement, and inventory policy analysis.
+The project follows an end-to-end data science workflow, covering exploratory data analysis, data preprocessing, feature engineering, baseline modeling, model improvement, prediction-error analysis, and inventory policy evaluation.
 
-The goal is to turn historical sales data into actionable insights that can help businesses make more informed demand and inventory decisions.
+The objective is to transform historical sales data into actionable insights that help businesses make more informed demand forecasting and inventory management decisions.
 
 ## 🎯 Business Problem
 
-Businesses need to understand how demand changes over time to make effective inventory decisions.
+Businesses need reliable demand estimates to make effective inventory decisions.
 
-Poor demand planning can contribute to:
+Poor demand planning can lead to:
 
-* Overstocking and unnecessary inventory costs.
+* Overstocking and increased inventory holding costs.
 * Stockouts and missed sales opportunities.
 * Difficulty identifying demand trends and irregular patterns.
 * Inefficient inventory replenishment decisions.
+* Challenges in balancing product availability with inventory costs.
 
-This project investigates historical demand data and applies data science techniques to support more informed forecasting and inventory planning.
+This project investigates historical demand data and applies data science and machine learning techniques to support better forecasting and inventory planning.
 
 ## 🎯 Project Objectives
 
-* Explore historical demand patterns and data quality.
+* Explore historical demand patterns and assess data quality.
 * Prepare and transform data for analysis and modeling.
 * Engineer meaningful features from historical demand data.
-* Develop a baseline machine learning model.
-* Improve model performance through experimentation.
-* Compare model results and analyze prediction errors.
-* Explore inventory policies using demand analysis and model outputs.
+* Establish a baseline machine learning model.
+* Experiment with model improvements and compare performance.
+* Analyze prediction errors to identify opportunities for improvement.
+* Investigate inventory policies using demand analysis and model outputs.
+* Organize experimental results and document project progress.
 
 ## 🗂️ Dataset Overview
 
 The processed dataset contains approximately **1.91 million rows and 26 columns**, representing **1,000 unique products**.
 
-| Attribute          | Details                              |
-| ------------------ | ------------------------------------ |
-| Dataset type       | Historical product-level demand data |
-| Number of records  | 1,913,000                            |
-| Number of features | 26                                   |
-| Unique products    | 1,000                                |
-| Date range         | January 29, 2011 – April 24, 2016    |
-| Data format        | Parquet and CSV                      |
+| Attribute         | Details                              |
+| ----------------- | ------------------------------------ |
+| Dataset type      | Historical product-level demand data |
+| Number of records | 1,913,000                            |
+| Number of columns | 26                                   |
+| Unique products   | 1,000                                |
+| Date range        | January 29, 2011 – April 24, 2016    |
+| Data formats      | Parquet and CSV                      |
 
-These figures describe the dataset inspected during the project. The exact dataset source and original column definitions can be documented separately as they are verified.
+These figures describe the dataset inspected during the project. The original data source and column definitions should be documented separately once verified.
 
 ## 🛠️ Technologies Used
 
@@ -56,63 +58,98 @@ These figures describe the dataset inspected during the project. The exact datas
 * **Matplotlib** — Data visualization
 * **Seaborn** — Statistical visualization
 * **Scikit-learn** — Machine learning and model evaluation
+* **PyArrow** — Parquet file processing
 * **Jupyter Notebook** — Interactive experimentation
 * **Git & GitHub** — Version control and project documentation
 
 ## 🔄 Project Workflow
 
-### 1. Exploratory Data Analysis
+### Day 1: Exploratory Data Analysis
 
-* Examined the dataset's structure and dimensions.
+* Examined dataset dimensions, structure, and data types.
 * Investigated product-level demand patterns.
 * Checked for duplicate product-date records.
 * Explored data quality and demand behavior.
 * Investigated zero-sales days and demand variability.
 
-### 2. Data Preprocessing
+### Day 2: Data Preprocessing
 
 * Prepared data for downstream analysis.
-* Examined data quality issues.
+* Investigated potential data quality issues.
 * Organized the dataset for feature engineering and model development.
+* Prepared the foundation for subsequent modeling experiments.
 
-### 3. Feature Engineering
+### Day 3: Feature Engineering
 
 * Developed a feature-engineered dataset for machine learning.
 * Prepared relevant features for demand prediction.
-* Organized the processed data for subsequent modeling experiments.
+* Organized processed data for subsequent modeling experiments.
+* Saved processed data in reusable formats.
 
-### 4. Baseline Modeling
+### Day 4: Baseline Modeling
 
 * Established an initial machine learning baseline.
 * Evaluated model predictions using appropriate performance metrics.
-* Saved baseline results for comparison.
+* Saved baseline evaluation results.
+* Created a reference point for subsequent experiments.
 
-### 5. Model Improvement
+### Day 5: Model Evaluation and Improvement
 
 * Experimented with model improvements.
 * Compared model performance against the baseline.
-* Investigated prediction errors and opportunities for improvement.
+* Investigated prediction errors and their direction.
+* Generated visualizations to compare model results.
+* Organized evaluation outputs for further analysis.
 
-### 6. Inventory Policy Analysis
+### Day 6: Model Experimentation
+
+* Continued investigating model performance.
+* Reviewed experimental results and potential improvements.
+* Organized outputs to support reproducible comparisons.
+
+### Day 7: Inventory Policy Analysis
 
 * Explored inventory-related decisions using demand analysis and model outputs.
 * Examined inventory policy results.
-* Worked toward translating model outputs into practical inventory planning insights.
+* Investigated how demand estimates could inform inventory planning.
+* Saved outputs for further evaluation.
+
+### Day 8: Continued Analysis and Project Development
+
+* Continued development of the demand forecasting workflow.
+* Organized processed datasets and project outputs for subsequent analysis.
+* Reviewed the existing modeling and inventory analysis workflow.
+* Continued preparing the project for more systematic evaluation and reproducibility.
+
+*The Day 8 description should be refined to reflect the exact implementation, experiments, and outputs completed during that session.*
 
 ## 📈 Results & Evaluation
 
-The project includes baseline model results, model comparison outputs, prediction-error visualizations, and inventory policy analysis.
+The project includes baseline evaluation results, model comparison outputs, prediction-error visualizations, and inventory policy analysis.
 
-The following artifacts are available in the repository:
+### Available Results
 
-* `baseline_results.csv` — Baseline evaluation results.
-* `model_comparison.csv` — Model comparison results.
-* `day5_error_direction.png` — Prediction-error analysis visualization.
-* `day5_model_comparison.png` — Model comparison visualization.
-* `day7_inventory_policy.csv` — Inventory policy analysis output.
-* `day7_model_improvement_results.csv` — Model improvement results.
+| Artifact                             | Purpose                         |
+| ------------------------------------ | ------------------------------- |
+| `baseline_results.csv`               | Baseline model evaluation       |
+| `model_comparison.csv`               | Comparison of model performance |
+| `day5_error_direction.png`           | Prediction-error analysis       |
+| `day5_model_comparison.png`          | Model comparison visualization  |
+| `day7_inventory_policy.csv`          | Inventory policy analysis       |
+| `day7_model_improvement_results.csv` | Model improvement evaluation    |
 
-**Note:** Quantitative performance improvements and final conclusions should be reported after verifying the actual evaluation metrics and comparing the baseline with the improved model.
+### Evaluation Approach
+
+The project uses model evaluation and comparison to investigate forecasting performance.
+
+The analysis focuses on:
+
+* Comparing model results against the baseline.
+* Examining prediction errors.
+* Identifying opportunities for model improvement.
+* Exploring the relationship between demand predictions and inventory decisions.
+
+**Note:** Final performance metrics, percentage improvements, and business impact should be reported only after verifying the actual experimental results.
 
 ## 📁 Repository Structure
 
@@ -120,6 +157,7 @@ The following artifacts are available in the repository:
 demand-analysis-project/
 │
 ├── README.md
+├── requirements.txt
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
@@ -130,7 +168,8 @@ demand-analysis-project/
 │
 ├── data/
 │   ├── README.md
-│   └── feature_engineered_sample.parquet
+│   ├── feature_engineered_sample.parquet
+│   └── sales_sample.csv
 │
 ├── reports/
 │   ├── baseline_results.csv
@@ -140,44 +179,41 @@ demand-analysis-project/
 │   ├── day7_inventory_policy.csv
 │   └── day7_model_improvement_results.csv
 │
-├── daily-progress/
-│   ├── README.md
-│   └── Daily progress logs
-│
-└── requirements.txt
+└── daily-progress/
+    └── README.md
 ```
 
-*The structure above summarizes the intended organization. Keep the filenames aligned with the files actually present in your repository.*
+*This structure is illustrative. Update it to match the files and folders actually present in the repository, including any Day 8 artifacts.*
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-* Python 3.10 or a compatible version for your installed dependencies.
+* Python 3.10 or a compatible version for the installed dependencies.
 * Jupyter Notebook or JupyterLab.
 * Git, if you want to clone the repository.
 
 ### Installation
 
-Clone the repository:
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/20deepak28/demand-analysis-project.git
 ```
 
-Navigate to the project directory:
+**2. Navigate to the project directory**
 
 ```bash
 cd demand-analysis-project
 ```
 
-Create and activate a virtual environment if desired, then install the dependencies:
+**3. Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter:
+**4. Launch JupyterLab**
 
 ```bash
 jupyter lab
@@ -185,17 +221,19 @@ jupyter lab
 
 Open the notebooks in numerical order to follow the project workflow.
 
-**Important:** Some notebooks may require the original dataset or additional processed files. Check their data-loading paths and obtain any required data before running them.
+**Important:** Some notebooks may require the original dataset or additional processed files. Verify the data-loading paths and obtain any required data before running them.
 
 ## 🔮 Future Improvements
 
 * Evaluate additional forecasting approaches.
-* Improve model performance through systematic hyperparameter tuning.
-* Compare prediction accuracy across different products and demand patterns.
+* Perform systematic hyperparameter tuning.
+* Compare prediction accuracy across products and demand patterns.
 * Investigate intermittent and highly variable demand.
-* Evaluate inventory policies using appropriate business cost assumptions.
-* Add clearer visualizations of forecast accuracy and inventory outcomes.
-* Document final model metrics and business recommendations.
+* Evaluate inventory policies using realistic business cost assumptions.
+* Develop clearer visualizations of forecast accuracy and inventory outcomes.
+* Document verified model metrics and business recommendations.
+* Improve reproducibility through consistent experiment tracking.
+* Expand the project documentation as additional development days are completed.
 
 ## 👨‍💻 Author
 
@@ -208,4 +246,5 @@ Aspiring Data Scientist | Python | SQL | Machine Learning | Data Analysis
 
 ---
 
-*This project is part of my hands-on journey in data science, focused on applying data analysis and machine learning techniques to practical business problems.*
+*This project is part of my hands-on data science journey, focused on applying data analysis and machine learning techniques to practical business problems.*
+
